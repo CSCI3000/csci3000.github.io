@@ -49,7 +49,7 @@ body {
     height:400px;
    
 }
-#grid-container>div{
+#grid-container > div{
     object-fit:cover;
 }
 /* navigation styles start here */
