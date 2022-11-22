@@ -45,10 +45,11 @@ body {
 #grid-container {
     display:grid;
     grid-template-columns:auto auto auto auto;
+    width: 400px;
+    height:400px;
    
 }
 #grid-container>div{
-    width: 400px;
     object-fit:cover;
 }
 /* navigation styles start here */
