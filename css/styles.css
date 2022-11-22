@@ -44,7 +44,7 @@ body {
 }
 #grid-container {
     display:grid;
-    grid-template-columns:200px 200px;
+    grid-template-columns:auto;
     width: 400px;
     height:400px;
    
