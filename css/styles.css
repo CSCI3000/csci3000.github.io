@@ -32,6 +32,8 @@ body {
     display: grid;
     place-items: center;
 }
+.container {
+}
 
 .information-home {
     padding: 20px;
@@ -44,8 +46,8 @@ body {
 }
 #grid-container {
     display:grid;
-    grid-template-columns:25% 25% 25% 25%;
-    
+    grid-template-columns:auto auto auto auto;
+    width:400px;
 }
 
 /* navigation styles start here */
