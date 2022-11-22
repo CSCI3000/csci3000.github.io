@@ -3,6 +3,12 @@
     --background: rgba(0, 214, 170, .85);
 }
 
+/* Webpage fits all size screens */
+.WebContainer {
+    width: 100%;
+    height: auto;
+}
+
 *,
 *::before,
 *::after {
@@ -14,6 +20,7 @@ body {
     background: #222;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
+    color: white;
 }
 
 .content {
@@ -26,6 +33,15 @@ body {
     place-items: center;
 }
 
+.information-home {
+    padding: 20px;
+}
+
+.information {
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 /* navigation styles start here */
 
@@ -179,4 +195,24 @@ nav a:hover {
     nav a:hover::before {
         transform: scale(1, 1);
     }
+}
+
+/* Top part of home page */
+.landscape-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Course Tour page */
+.tees-table td, th{
+    padding:5px 20px 5px 5px;
+    text-align: left;
 }
