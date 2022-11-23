@@ -48,11 +48,9 @@ body {
 }
 #grid-container > div{
     object-fit:cover;
-    width: 400px;
     height:400px;
     img {
-        width:100px;
-        height:100px;;
+        height:100px;
     }
 }
 /* navigation styles start here */
