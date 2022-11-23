@@ -44,12 +44,13 @@ body {
 }
 #grid-container {
     display:grid;
-    width: 400px;
-    height:400px;
-   
+
 }
 #grid-container > div{
     object-fit:cover;
+    width: 400px;
+    height:400px;
+    
 }
 /* navigation styles start here */
 
