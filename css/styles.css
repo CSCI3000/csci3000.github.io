@@ -51,6 +51,7 @@ body {
     height:400px;
     img {
         height:auto;
+        width:auto;
     }
 }
 /* navigation styles start here */
