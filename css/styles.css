@@ -47,12 +47,7 @@ body {
     grid-template-columns:auto auto;
 }
 #grid-container > div{
-    object-fit:cover;
-    height:400px;
-    img {
-        height:auto;
-        width:auto;
-    }
+    
 }
 /* navigation styles start here */
 
