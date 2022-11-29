@@ -44,12 +44,12 @@ body {
 }
 #grid-container {
     display:grid;
-    display:flex;
     grid-template-columns:auto auto;
     
 }
-#grid-container > div{
-    
+#grid-container img{
+    height:200px;
+    width:200px;
 }
 /* navigation styles start here */
 
