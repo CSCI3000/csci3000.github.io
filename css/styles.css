@@ -45,13 +45,13 @@ body {
 #grid-container {
     display:grid;
     grid-template-columns:auto auto;
-    width:400px;
-    height:300px;
+    width:1500px;
+    height:1125px;
     
 }
 #grid-container img{
-    width:200px;
-    height:150px;
+    width:750px;
+    height:562.5px;
 }
 /* navigation styles start here */
 
