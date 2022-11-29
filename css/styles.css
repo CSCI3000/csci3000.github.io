@@ -48,7 +48,7 @@ body {
     width:100%;
     
 }
-#grid-container img{
+#grid-container >div img{
     width:auto;
     height:200px;
 }
