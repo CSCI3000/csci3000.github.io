@@ -45,8 +45,7 @@ body {
 #grid-container {
     display:grid;
     grid-template-columns:auto auto;
-    width:400px;
-    height:400px;
+  
     
 }
 #grid-container img{
