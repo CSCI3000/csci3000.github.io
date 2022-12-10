@@ -283,3 +283,10 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #07d;
 }
+
+table {
+ border: 2px solid blue;
+ th{
+     background-color:Green;
+    }
+}
