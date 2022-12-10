@@ -1,4 +1,2 @@
 let menuHTML = document.getElementById("menu").innerHTML;
-function makeMenu(){
-  return menuHTML;
-}
+document.ChildNode[1].appendChildNode(menuHTML);
