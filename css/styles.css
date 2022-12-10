@@ -287,6 +287,7 @@ input[type=submit]:hover {
 table {
  border: 2px solid blue;
  th{
+     border: 3px solid blue;
      background-color:Green;
     }
 }
