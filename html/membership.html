@@ -45,7 +45,10 @@
         <!-- Membership Form - Sign up -->
         <h2>Interested in Membership or Have Questions?</h2>
         <p>Contact the Achasta Golf Shop at (706) 867-7900<br> Or just send us your details and we will get back to you as soon as we can...</p>
-        <form name="membership" action="process.php" method="post">
+        <form name="membership" action="membership.html" method="post">
+            <!--"action=" would normally be set to process.php to post to formResults.csv,
+                however due to the way Github Pages function, it is impossible to do so.
+                To preserve funcitonality, it has been changed to "membership.html"-->
             <p>
                 <label for="fullName">Full Name</label>
                 <input type="text" id="fullName" name="Full Name">
@@ -63,6 +66,12 @@
                 <input type="text" id="message" name="Message">
             </p>
             <input type="submit" onclick="clicked(event)"><br>
+            <!--Github Pages does not support server side scripting,
+                therefore the form cannot accept data online.
+                The code does work if ran in a local environment or
+                if another web host is used. The "process.php" and
+                "formResults.csv" are used to sort and store user information
+                when a suitable webserver is used.-->
             <script>
                 function clicked(e) {
                     if (!confirm('Are you sure you would like to submit your message?')) {
