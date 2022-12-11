@@ -31,31 +31,21 @@
     </header>
 
     <div class="information">
-        <img src="https://i0.wp.com/achasta.com/wp-content/uploads/sites/3/2016/08/membership-page.jpg?w=1080"
-            alt="A signature golf course">
+        <img src="https://i0.wp.com/achasta.com/wp-content/uploads/sites/3/2016/08/membership-page.jpg?w=1080" alt="A signature golf course">
         <h1>Membership</h1>
-        <p>At Achasta, you can select from a range of membership options and dues that allow you to personalize the way
-            you enjoy your new community.
-            Membership is required for residents, and will provide a lifestyle and community that&#39;s truly focused on
-            you.</p>
-        <p>A fun-filled social and cultural program presents an ever-evolving calendar from which members can plan to
-            attend nature hikes, fishing, concerts under the stars,
-            xcursions, kayaking, tubing on the river, wine tasting, performances and more. Achasta places a premium on
-            fun and games and a wide range of activities.</p>
-        <p>We strive to create new traditions, and we enjoy a relationship with Dahlonega in hosting some of its
-            existing festival activities on-site.
-            Here, the software is more important than the hardware; the Activities Director takes charge of facilitating
-            activities,
-            bringing together people into groups and clubs that are inclusive and give our members the opportunity to
-            enjoy and be a part of the Achasta lifestyle.
-            We recognize that it is not the “bricks and sticks” that make a place meaningful, but the memories created
-            and connections experienced within the community.</p>
+        <p>At Achasta, you can select from a range of membership options and dues that allow you to personalize the way you enjoy your new community. Membership is required for residents, and will provide a lifestyle and community that&#39;s truly focused
+            on you.
+        </p>
+        <p>A fun-filled social and cultural program presents an ever-evolving calendar from which members can plan to attend nature hikes, fishing, concerts under the stars, xcursions, kayaking, tubing on the river, wine tasting, performances and more. Achasta
+            places a premium on fun and games and a wide range of activities.</p>
+        <p>We strive to create new traditions, and we enjoy a relationship with Dahlonega in hosting some of its existing festival activities on-site. Here, the software is more important than the hardware; the Activities Director takes charge of facilitating
+            activities, bringing together people into groups and clubs that are inclusive and give our members the opportunity to enjoy and be a part of the Achasta lifestyle. We recognize that it is not the “bricks and sticks” that make a place meaningful,
+            but the memories created and connections experienced within the community.</p>
 
         <!-- Membership Form - Sign up -->
         <h2>Interested in Membership or Have Questions?</h2>
-        <p>Contact the Achasta Golf Shop at (706) 867-7900<br>
-            Or just send us your details and we will get back to you as soon as we can...</p>
-        <form>
+        <p>Contact the Achasta Golf Shop at (706) 867-7900<br> Or just send us your details and we will get back to you as soon as we can...</p>
+        <form name="membership" action="process.php" method="get">
             <p>
                 <label for="fullName">Full Name</label>
                 <input type="text" id="fullName" name="Full Name">
@@ -72,7 +62,14 @@
                 <label for="message">Latest Message</label>
                 <input type="text" id="message" name="Message">
             </p>
-            <input type="submit" value="Submit"><br>
+            <input type="submit" onclick="clicked(event)"><br>
+            <script>
+                function clicked(e) {
+                    if (!confirm('Are you sure you would like to submit your message?')) {
+                        e.preventDefault();
+                    }
+                }
+            </script>
         </form>
     </div>
 </body>
