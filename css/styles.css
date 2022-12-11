@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
-
 :root {
     --background: rgba(0, 214, 170, .85);
 }
 
+
 /* Webpage fits all size screens */
+
 .WebContainer {
     width: 100%;
     height: auto;
@@ -44,6 +45,7 @@ body {
     padding-right: 20px;
 }
 
+
 /* Grid */
 
 #grid-container {
@@ -62,12 +64,13 @@ body {
     max-width: 100%;
 }
 
-#holiday{
+#holiday {
     visibility: hidden;
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 header {
     background: var(--background);
@@ -171,16 +174,13 @@ nav a:hover {
     .nav-toggle-label {
         display: none;
     }
-
     header {
         display: grid;
         grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
     }
-
     .logo {
         grid-column: 1 / 3;
     }
-
     nav {
         /*fix that i found for edge support*/
         position: relative;
@@ -196,21 +196,17 @@ nav a:hover {
         justify-content: flex-end;
         align-items: center;
     }
-
     nav ul {
         display: flex;
     }
-
     nav li {
         margin-left: 3em;
         margin-bottom: 0;
     }
-
     nav a {
         opacity: 1;
         position: relative;
     }
-
     nav a::before {
         content: '';
         display: block;
@@ -223,13 +219,14 @@ nav a:hover {
         transform: scale(0, 1);
         transition: transform ease-in-out 250ms;
     }
-
     nav a:hover::before {
         transform: scale(1, 1);
     }
 }
 
+
 /* Top part of home page */
+
 .landscape-container {
     position: relative;
     text-align: center;
@@ -243,6 +240,7 @@ nav a:hover {
     transform: translate(-50%, -50%);
 }
 
+
 /* Course Tour page */
 
 .tees-table td,
@@ -251,7 +249,9 @@ th {
     text-align: left;
 }
 
+
 /* Membership Form */
+
 form {
     width: 410px;
     padding: 10px;
@@ -290,10 +290,10 @@ input[type=submit]:hover {
 }
 
 table {
- border: 2px solid blue;
-
+    border: 2px solid blue;
 }
-th{
-     border: 4px solid blue;
-     background-color:Green;
+
+th {
+    border: 4px solid blue;
+    background-color: Green;
 }
