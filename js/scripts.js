@@ -1,8 +1,11 @@
-let timerId = setTimeout(showHoliday, 3000);
-clearTimeout(timerId);
-function showHoliday() {
-   let holiday  = document.getElementById("holiday");
-   holiday.style.display = "block";
+var holidayMessage = document.getElementById("holiday");
+let msg = setTimeout(showMsg,3000);
+holiday.addEventListener('click',clearinterval(msg));
+function showMsg(){
+   holidayMessage.style.visibility: visible;
 }
+
+
+   
 
 
