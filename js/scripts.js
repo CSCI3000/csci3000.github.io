@@ -1,6 +1,6 @@
 var holidayMessage = document.getElementById("holiday");
 let msg = setTimeout(showMsg,3000);
-addEventListener('click',clearinterval(msg));
+addEventListener('click',clearInterval(msg));
 function showMsg(){
    holidayMessage.style.setProperty("visibility","visible");
 }
