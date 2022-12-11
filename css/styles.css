@@ -67,9 +67,7 @@ body {
     position: absolute;
     top:50%;
     left:50%;
-}
-
-/* navigation styles start here */
+    transform: translate(-50%,-50%);
 
 header {
     background: var(--background);
